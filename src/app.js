@@ -9,8 +9,13 @@ app.get('/', (req, res) => {
     res.send('Hello World!')
 })
 
-app.get('/example', (req, res) => {
-  res.send(AppDataSource.manager.find(Person))
+app.get('/persons', async (req, res) => {
+    let persons = await AppDataSource
+        .createQueryBuilder()
+        .select('person')
+        .from(Person)
+        .getMany()
+    res.send(persons)
 })
 
 app.listen(port, () => {
