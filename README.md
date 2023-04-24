@@ -6,5 +6,5 @@ $ npm install
 # Running Locally
 
 ```
-$ node app.js
+$ npm start
 ```
