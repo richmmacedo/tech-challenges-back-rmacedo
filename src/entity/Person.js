@@ -19,6 +19,24 @@ const Person = new EntitySchema({
             type: "varchar",
         },
     },
+    relations: {
+        roles: {
+            name: 'roles',
+            type: 'many-to-many',
+            target: 'role',
+            joinTable: {
+                name: 'persons_roles',
+                joinColumn: {
+                    name: 'person_id'
+                },
+                inverseJoinColumn: {
+                    name: 'role_id'
+                },
+            },
+            inverseSide: 'person',
+            cascade: true
+        },
+    },
 })
 
 module.exports = Person

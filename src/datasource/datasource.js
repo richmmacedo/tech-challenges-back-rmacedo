@@ -4,7 +4,7 @@ const AppDataSource = new typeorm.DataSource({
     type: 'better-sqlite3',
     database: './src/main.sql',
     synchronize: true,
-    entities: [require("../entity/Person")],
+    entities: [require("../entity/Person"), require("../entity/Role")],
 })
 
 AppDataSource.initialize()
