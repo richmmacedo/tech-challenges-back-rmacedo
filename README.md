@@ -5,6 +5,8 @@ Olá! Bem vindo ao Tech Challenge da Brasa!
 Neste desafio, você está encarregado de criar (ou continuar) essa API básica.
 Você tem total liberdade para pesquisar como funciona qualquer coisa, seja uma biblioteca utilizada, ou até particularidades da linguagem JavaScript. Porém, insistimos que você se esforçe ao máximo e tente não copiar o código inteiro — o que mais importa é a sua tentativa, não o produto final, então tente comentar bastante o código com seus pensamentos e ideias.
 
+Para começar o desafio, faça um fork **publico** deste repositório e, enquanto progride, faça commmits para que o time possa analizar seu progresso e linha de raciocínio.
+
 A funcionalidade desejada desta api é um CRUD (Create, Update, Delete) básico para controlar duas tabelas, Person e Roles. Para formar um relacionamento (many to many) entre as duas tabelas, é criado uma terceira tabela, persons_roles.
 
 ### **Person**
