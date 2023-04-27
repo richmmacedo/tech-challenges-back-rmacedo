@@ -14,8 +14,8 @@ A funcionalidade desejada desta api é um CRUD (Create, Update, Delete) básico 
 | Column     | Type              |
 | ---------- | ----------------- |
 | id         | int (auto-gerado) |
-| first-name | varchar (string)  |
-| last-name  | varchar (string)  |
+| first_name | varchar (string)  |
+| last_name  | varchar (string)  |
 | email      | varchar (string)  |
 
 ### **Role**
@@ -34,9 +34,9 @@ A funcionalidade desejada desta api é um CRUD (Create, Update, Delete) básico 
 
 ### **Com estas três tabelas, você deve fazer endpoints para atingir as seguintes funcionalidades:**
 
-- Método GET para listar todas entradas em **_People_**.
-- Método GET com parâmetros de busca pelo **_last_name_** para pesquisar em **_People_**
-- Método POST para inserir uma nova entrada em **_People_** (first_name, last_name, email)
+- Método GET para listar todas entradas em **_Person_**.
+- Método GET com parâmetros de busca pelo **_last_name_** para pesquisar em **_Person_**
+- Método POST para inserir uma nova entrada em **_Person_** (first_name, last_name, email)
 - Método PATCH para atualizar **_first_name_** e **_last_name_** usando o **_email_**
 - Método DELETE para remover entradas em **_People_** utilizando **_email_**
 
@@ -48,10 +48,10 @@ A funcionalidade desejada desta api é um CRUD (Create, Update, Delete) básico 
 
 ---
 
-- Método POST para vincular uma **_People_** a uma **_Role_**
-- Método GET para buscar todas **_People_** com uma **_Role_**
-- Método GET para buscar todos **_Roles_** de uma **_People_**
-- Método DELETE para remover uma **_Role_** de uma **_People_**
+- Método POST para vincular uma **_Person_** a uma **_Role_**
+- Método GET para buscar todas **_Person_** com uma **_Role_**
+- Método GET para buscar todos **_Roles_** de uma **_Person_**
+- Método DELETE para remover uma **_Role_** de uma **_Person_**
 
 Fique tranquilo que parece um monte de código, mas a grande maioria ou é simples ou é repetido. Você só precisa se preocupar com a lógica de cada endpoint.
 
