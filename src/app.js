@@ -3,8 +3,11 @@ const Person = require('./entity/Person.js')
 const fs = require("fs");
 const { marked } = require('marked');
 const express = require('express')
+const bodyParser = require('body-parser')
 const app = express()
 const port = 3000
+
+app.use(bodyParser.json())
 
 const personRepository = AppDataSource.getRepository(Person)
 
