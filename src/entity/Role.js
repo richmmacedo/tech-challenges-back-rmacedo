@@ -1,6 +1,6 @@
 const EntitySchema = require('typeorm').EntitySchema
 
-const Person = new EntitySchema({
+const Role = new EntitySchema({                                                // Mudar nome do schema a ser exportado para correto uso no app 
     name: 'Role',
     tableName: 'role',
     columns: {
@@ -22,4 +22,4 @@ const Person = new EntitySchema({
     }
 })
 
-module.exports = Person
+module.exports = Role                                                          // Exportar módulo correto - mudança de Person para Role
